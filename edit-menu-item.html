@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>truYum</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body>
+<header>
+	<span id="title"> truYum</span>
+	<img src="images/logo-light.jpeg" alt="logo" title="logo">
+	<a  href="" id="menu"></a>
+	<a  href="menu-item-list-admin.html" id="menu">Menu</a>
+
+</header>
+<div id="mainbody">
+	<h2>Edit Menu Item</h2>
+	<form>
+	<div>
+		<div style="width:80%;margin-bottom: 30px;">
+		<label for="Name">Name</label>
+		<input style="width:100%" type="textarea" id="foodname" name="Name" placeholder="Enter FOOD item name">  
+		</div>
+		<div style="width:80%; ">
+			<div style="width:20%; float:left; ">
+				<label for="price">Price (Rs.)</label><br>
+				<input  style="width:90%" type="texarea" id="foodprice" name="price" placeholder="Price" required>
+			</div>
+			<div style="width:20%; float:left; padding-left-left: 20px;">
+				Active<br>
+				<input type="radio" name="Active" value="Yes">Yes
+				<input type="radio" name="Active" value="Yes">No
+
+			</div>
+			
+			<div style="width:30%; padding-left: 60px; float:right;">
+				Category<br>
+				<select name="Category" id="foodcategory">
+					<option value="Starters">Starters</option>
+					<option value="Main Course" selected selected>Main Course</option>
+					<option value="Dessert">Dessert</option>
+					<option value="Drinks">Drinks</option>
+				</select>
+			</div>
+			<div style="width:20%; float:right; ">
+				<label for="date">Date of Launch</label> <br>
+				<input type="Date" name="date" id="fooddate" placeholder="date" required>
+
+
+			</div>
+		</div>
+		<div style="width:80%; float:left; padding-top: 30px;">
+		<input type="checkbox" name="free delivery" checked>
+		<span style="font-size:20px;">Free Delivery</span><br>
+		</div>
+		<div style="float:left; width:80%; padding-top: 15px;">
+		<button type="button" id="foodsave" onclick="validate()">Save</button>
+		</div>
+	</div>
+	</form>
+
+</div>
+<footer>
+ <span style="margin-left:10px; margin-top: 40px; display: inline-block;">Copyright &copy; 2019</span> 
+</footer>
+</body>
+</html>
